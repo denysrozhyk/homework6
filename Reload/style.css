@@ -1,0 +1,266 @@
+body{
+	box-sizing: border-box;
+	margin: 0;
+	display: flex;
+  	min-height: 100vh;
+    flex-direction: column;
+
+
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Lato', sans-serif;
+
+
+}
+header{
+	background-color: yellow;
+	display: flex;
+	justify-content: space-between;
+	background-color: #F00;	
+}
+.social-networks a{
+	color: green;
+	font-size: 20px;
+}
+nav{
+	align-self: center;
+}
+.logo{
+	width: 150px;
+	padding: 20px;
+}
+.menu {
+    text-align: right;
+}
+
+.menu__icon {
+   display: none;
+   width: 45px;
+   height: 35px;
+   position: relative;
+   cursor: pointer;
+}
+
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #333333;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.menu__icon span:nth-child(1) {
+  top: 0px;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+  top: 13px;
+}
+
+.menu__icon span:nth-child(4) {
+  top: 26px;
+ }
+
+.menu__links-item {
+    display: inline-block;
+    color: #333333;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu__links-item:hover {
+    text-decoration: underline;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__links {
+  display: block;  
+}
+
+@media screen and (max-width: 999px) {
+  .menu__icon{
+    display: inline-block;
+  }
+  ul{
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	position: absolute;
+  	background-color: yellow;
+  	color:#fff;
+  	width: 200px;
+  	right: 0;
+  	top: 79px;
+/*  	opacity: 0;
+  	visibility: hidden;*/
+  	transform: translate(100%);
+  	transition: transform .2s linear;
+  }
+  .menu__links-item{
+  	color: inherit;
+  }
+  .menu_state_open ul{
+  	transform: translate(0);
+/*  	opacity: 1;
+  	visibility: visible;*/
+  }
+  /*
+  .menu__links {
+    position: fixed;
+    display: none;
+    top: 43px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 52px;
+    background-color:lightgrey ;
+    z-index: 1000;
+    overflow: auto;
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+   	align-items: center;
+  }
+  
+  .menu__links-item {
+    padding: 10px 0;
+    text-align: center;
+    color: #000;
+  }*/
+}
+@media(max-width: 1024px){
+
+}
+li{
+	list-style: none;
+	display: inline-flex;
+	padding-right: 20px;
+}
+a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #000;
+}
+main{
+	display: flex;
+	align-content: center;
+	flex:1;
+}
+section{
+	flex-grow: 2;
+	order:2;
+	text-align: center;
+	box-sizing: border-box;
+}
+h1{
+	text-transform: uppercase;
+}
+div{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+.box{
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid #000;
+	border-radius: 22px;
+	width: 30%;
+	min-height: 350px;
+	margin: 10px;
+	padding: 20px;
+}
+.box:hover{
+	transform: scale(1.05);
+	box-shadow: 0 0 10px;
+	transition: all .4s;
+}
+.picture{
+	border: 10px solid purple;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+}
+.box:hover .picture{
+	border-radius: 30%;
+	transition: all .3s;
+}
+.text{
+	flex: 1;
+}
+.button{
+	height: 30px;
+	width: 90px;
+	color:#FFF;
+	border-radius: 20px;
+	border: 1px solid purple;
+	background-color: purple;
+}
+.box:hover .button{
+	border: none;
+	background-color: red;
+}
+.aside-one{
+	flex-grow: 1;
+	order:1;
+	background-color: purple;
+	padding: 40px;
+}
+.aside-two{
+	flex-grow:1;
+	order: 3;
+	background-color: blue;
+	padding:40px;
+}
+footer{
+	display: flex;
+	justify-content: center;
+	background-color:green;
+}
+@media (max-width: 1024px){
+	header{
+		background-color: red;
+	}
+}
+@media (min-width: 640px){
+	.box{
+		width:calc(33.33% - 10px);
+	}
+}
+@media (min-width: 1024px){
+	.box{
+		width: 30%;
+		
+	}
+}	

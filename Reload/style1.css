@@ -1,0 +1,62 @@
+
+.three1{
+
+            width:400px;
+
+            display: table-cell;
+
+            border: 2px solid black;
+
+}
+
+.three2{    width: 800px;
+
+            display: table-cell;
+
+            border: 2px solid black;
+
+}
+
+.three2>div.zz1{
+
+            outline: 2px solid black;
+
+}
+
+.in_zzz{
+
+            width: 400px;
+
+            display: table-cell;
+
+            outline: 2px solid black;
+
+}
+
+.in_zzz1{
+
+            width: 500px;
+
+            display: table-cell;
+
+            outline: 2px solid black;
+
+}
+
+.in_zzz1>div{
+
+            outline: 2px solid black;
+
+}
+
+.box{ 
+	width:800px;
+	display: table-cell;
+	border: 2px solid #000;
+	height: 30px;
+}
+.box-two>div{
+	display:table-cell;
+	border:2px solid black;
+	height: 30px;
+}

@@ -1,0 +1,22 @@
+.box-hold img{
+	float: left;
+	width: 30%;
+	transition: opacity 2s ease 1s, width 1s linear;
+}
+.card{
+	float: right;
+	width: 70%;
+}
+.box-hold{
+	overflow: hidden;
+}
+.box-hold img:hover{
+	opacity: 0;
+	width:10%;
+
+}
+/*.box-hold:after{
+	content: "";
+	display: table;
+	clear:both;
+}*/

@@ -1,0 +1,143 @@
+body{
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 1250px;
+	font-size: 20px;
+	line-height: 1.15;
+}
+h1{
+	font-size: 30px;
+	color: #cf1a68;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 3px solid lightgrey;
+	margin-bottom: 30px;
+}
+.logo{
+	width: 188px;
+	height: auto;
+	margin-left: 20px;
+	margin-bottom:10px ;
+}
+nav{
+	display: flex;
+	align-items: center;
+}
+.navigation:hover{
+	color:blue;
+}
+li{
+	list-style: none;
+	display: inline;
+	margin-right: 20px;
+}
+.navigation{
+	text-decoration: none;
+	color: #000;
+	font-size: 20px;
+	padding-left: 10px;
+}
+main{
+	flex:1;
+}
+.text:nth-child(even){
+	order: 2;
+	margin-left: 30px;
+}
+.box:after , .box-one:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+.box , .box-one{
+	display: flex;
+	align-items: center;
+}
+.box-cloud , .box-one-cloud{
+	width: 187px;
+	height: 187px;
+}
+.box-cloud{
+	margin-right: 30px;
+}
+.box-one-cloud{
+	order: 2;
+	margin-left: 30px;
+}
+.text{
+	padding-bottom: 150px;
+}
+.items{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-bottom:130px; 
+	border-bottom: 3px solid lightgrey;
+}
+.content{
+	box-sizing: border-box;
+	width: 383px;
+	border: 3px solid #939393;
+	min-height: 400px;
+	padding: 10px;
+	margin-top: 10px;
+}
+.content:hover{
+	border: 3px solid #939393;
+	opacity:.4;
+}
+.article{
+    position:absolute;
+   	color: #000;
+    padding:5px;
+    display:none;
+    left: 160px;
+    margin-top:150px;
+   	transition: all 3s;
+}
+.content:hover .article{
+	 display:block;
+	 opacity: 1;
+	 transform: rotate(360deg) ;
+
+}
+
+.content-img{
+	width: 187px;
+	height: 187px;
+	float: left;
+	padding: 20px;
+}
+.title{
+	font-size: 30px;
+	color: #cf1a68;
+	position: absolute;
+	margin-top: -900px;
+}
+.link{
+	text-decoration: none;
+	color: black;
+}
+footer{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+.footer-logo{
+	width: 95px;
+	align-items: center;
+}
+.contact{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.tell{
+		color: black;
+	text-decoration: none;
+}
